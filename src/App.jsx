@@ -24,4 +24,19 @@ export default function App() {
             </nav>
             <div className="hero-content">
                 <div className="main-logo-image"></div>
+                <div className="badge">
+                    <span className="bagde-text">INDEPENDENT CRIMINAL RECORD VERIFICATION</span></div>
+                <h1 className="center-title">
+                    Trusted.<br/>
+                    Confidential.<br/>
+                    <span className="golden-text">Worldwide.</span></h1>
+                <p className="center-subtitle">Professional background verification across 179 countries. Results delivered to your employer or immigration authority within 48 hours.</p>
+                <div className="hero-buttons">
+                    <button className="btn-one">Start Verification→</button>
+                    <button className="btn-two">How it works</button>
+                </div>
             </div>
+        </div>    
+    );
+}    
+
