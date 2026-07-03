@@ -1,0 +1,142 @@
+.hero-container{
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('./assets/hero.png') no-repeat center center/cover;
+  min-height: 100vh;
+  color:white;
+  font-family:Arial,sans-serif;
+  padding:20px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  position: relative; 
+}
+.logo-section{
+  display:flex;
+  align-items:left;
+}
+.gold-circle{
+  width:60px;
+  height:60px;
+  background:url('./assets/logo.png') no-repeat center center/cover;
+  border-radius: 50%;
+  border: 2px solid goldenrod;
+
+}
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  margin-left:10px;
+
+}
+.brand-title{
+  color:goldenrod;
+  font-weight:bold;
+  font-size:20px;
+  letter-spacing:1px;
+
+}
+.brand-subtitle{
+  font-size:10px;
+  color:dimgrey;
+  margin-top:2px;
+}
+.menu-button{
+  background-color:transparent;
+  border:none;
+  cursor:pointer;
+  font-size:28px;
+  color:white;
+}
+.nav-links{
+  display:none;
+  list-style:circle;
+  padding:0;
+  margin:0;
+
+}
+.nav-links.active{
+  display:block;
+}
+.nav-links li{
+  margin:10px 0;
+}
+.nav-links a{
+  color:white;
+  text-decoration: none;
+
+}
+.hero-content{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  margin-top:40px;
+}
+.main-logo-image{
+  width:150px;
+  height:150px;
+  background:url('./assets/logo.png') no-repeat center center/cover;
+  border-radius:50%;
+  margin-bottom:25px;
+  border:2px solid goldenrod;
+
+}
+.badge{
+  border:1px solid goldenrod;
+  color:goldenrod;
+  padding: 8px 14px;
+  margin-bottom:25px;
+  font-size:17px;
+  letter-spacing:1px;
+  background:rgb(42, 42, 56)
+}
+.center-title{
+  font-size:50px;
+  font-weight:bold;
+  line-height: 1.25;
+  margin-bottom:20px;
+}
+.golden-text{
+  color:goldenrod;
+}
+.center-subtitle{
+  color:ghostwhite;
+  max-width:480px;
+  font-size:15px;
+  line-height:1.5;
+  margin-bottom:30px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto 0 auto;
+}
+
+.hero-buttons button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-one{
+  background-color:goldenrod;
+  color:black;
+  border:none;
+}
+.btn-two{
+  background-color:transparent;
+  color:goldenrod;
+  border:1px solid goldenrod;
+}
