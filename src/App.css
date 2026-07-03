@@ -10,10 +10,9 @@
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
-  position: relative; 
 }
 .logo-section{
   display:flex;
@@ -54,13 +53,15 @@
 }
 .nav-links{
   display:none;
-  list-style:circle;
+  list-style:none;
   padding:0;
   margin:0;
+  width:100%;
 
 }
 .nav-links.active{
   display:block;
+  background-color:rgba(0, 0, 0, 0.8);
 }
 .nav-links li{
   margin:10px 0;
