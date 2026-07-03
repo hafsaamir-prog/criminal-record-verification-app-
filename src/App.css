@@ -142,3 +142,35 @@
   color:goldenrod;
   border:1px solid goldenrod;
 }
+.stats-container{
+  background-color:rgb(33, 33, 49);
+  padding:40px 20px;
+  border-top:1px solid goldenrod;
+  border-bottom:1px solid goldenrod;
+}
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+  margin : 0 auto;
+  text-align:center;
+  max-width:600px;
+}
+.stat-box {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stat-no{
+  font-size:32px;
+  font-weight:bold;
+  color: goldenrod;
+
+}
+.stat-desc{
+  font-size:10px;
+  color: rgb(172, 167, 167);
+  letter-spacing: 1.5px;
+}
