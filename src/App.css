@@ -265,7 +265,7 @@
     font-size:32px;
   }
 }
-.ser-container {
+.serv-container {
   background-color: #0b0f19; 
   color: white;
   font-family: 'Arial', sans-serif;
@@ -277,12 +277,12 @@
 
 }
 
-.ser-header-section {
+.serv-header-section {
   text-align: center;
   max-width: 600px;
 }
 
-.ser-gold-title {
+.serv-gold-title {
   color: goldenrod; 
   font-size: 12px;
   font-weight: bold;
@@ -290,22 +290,22 @@
   text-transform: uppercase;
 }
 
-.ser-main-heading {
+.serv-main-heading {
   font-size: 32px;
   font-weight: bold;
   margin: 15px 0;
 }
 
-.ser-sub-heading {
+.serv-sub-heading {
   color: #8a94a6;
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 25px;
 }
 
-.start-verification-btn, .card-action-btn {
+.start-veri-btn, .card-action-btn {
   background: linear-gradient(135deg, #e5c060, #cda343);
-  color: #000;
+  color: #14192c;
   border: none;
   border-radius: 6px;
   padding: 15px 30px;
@@ -316,19 +316,28 @@
   transition: opacity 0.2s ease;
 }
 
-.start-verification-btn:hover, .card-action-btn:hover {
-  opacity: 0.9;
+.start-veri-btn:hover, .card-action-btn:hover {
+  opacity: 1;
+  background: #5961c7b6;
+  color: #ffd700;
+  transform: scale(1.05)
 }
 
-.service-card {
+.cards-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:30px;
+}
+.serv-card-left, .serv-card-right {
   background-color: #1a233a; 
-  border-radius: 12px;
-  padding: 35px 25px;
-  width: 100%;
-  max-width: 900px; 
+  border-radius: 30px;
+  padding: 25px 35px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  width:45%
+
 }
 
 .express-badge {
@@ -350,7 +359,7 @@
   line-height: 1.3;
 }
 
-.card-description {
+.card-descrip {
   color: #8a94a6;
   font-size: 14px;
   line-height: 1.6;
