@@ -19,19 +19,18 @@ export default function People(){
                     trusted by leading companies worldwide</p>
         </div>
         <div className="image-container">
-            <img src ={immigration} alt ="Immigration" className ="people-image"/>
+            <img src ={immigration} alt ="Immigration" className ="people-image"/></div>
             <div className ="people-container">
                 <h3 className="people-title">Immigration Professionals</h3>
                 <p className="people-desc">Secure certified, multi-jurisdictional background checks to accelerate visa, residency, and citizenship applications while meeting strict regulatory standards worldwide.</p>
         </div>
-        </div>
         <div className="image-container">
-            <img src ={individual} alt ="Individual" className ="people-image"/>
+            <img src ={individual} alt ="Individual" className ="people-image"/></div>
             <div className ="people-container">
                 <h3 className="people-title">Private Individual</h3>
                 <p className="people-desc">Obtain official, tamper-proof personal clearance reports to seamlessly verify your own global record for international jobs, travel, or foreign university admissions.</p>
-        </div>
-        </div>
+            </div>
+    
 </div>
 
     );
