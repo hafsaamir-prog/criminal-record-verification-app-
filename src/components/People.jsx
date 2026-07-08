@@ -30,7 +30,7 @@ export default function People(){
                 <h3 className="people-title">Private Individual</h3>
                 <p className="people-desc">Obtain official, tamper-proof personal clearance reports to seamlessly verify your own global record for international jobs, travel, or foreign university admissions.</p>
             </div>
-    
+
 </div>
 
     );

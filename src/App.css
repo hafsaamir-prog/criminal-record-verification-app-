@@ -265,7 +265,7 @@
     font-size:32px;
   }
 }
-.serv-container {
+.serv-container , .pro-container , .tru-container{
   background-color: #0b0f19; 
   color: white;
   font-family: 'Arial', sans-serif;
@@ -276,12 +276,12 @@
   align-items: center;
 }
 
-.serv-header-section {
+.serv-header-section , .pro-header-section , .tru-header-section{
   text-align: center;
   max-width: 600px;
 }
 
-.serv-gold-title {
+.serv-gold-title , .pro-gold-title , .tru-gold-title{
   color: goldenrod; 
   font-size: 12px;
   font-weight: bold;
@@ -289,13 +289,13 @@
   text-transform: uppercase;
 }
 
-.serv-main-heading {
+.serv-main-heading , .pro-main-heading , .tru-main-heading{
   font-size: 32px;
   font-weight: bold;
   margin: 15px 0;
 }
 
-.serv-sub-heading {
+.serv-sub-heading , .pro-sub-heading {
   color: #8a94a6;
   font-size: 15px;
   line-height: 1.6;
@@ -442,7 +442,7 @@
     width: 500px;
     margin: 0 auto;
 }
-.people-container{
+.people-container {
   font-family: 'Arial', sans-serif;
   padding: 10px 10px;
   display: flex;
@@ -476,4 +476,85 @@
     width:100%;
     max-width:500px;
   }
+}
+.step-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 25px;
+}
+
+.step-num {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #d4af37;
+  border-radius: 50%;
+  color: #d4af37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.step-content , .tru-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step-heading , .tru-heading{
+  color: white;
+  font-size: 28px;
+  margin: 0;
+}
+
+.step-sub-heading , .tru-sub-heading{
+  color: #8a94a6;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+.tru-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.tru-box {
+  background-color: #0d1527;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.tru-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(218, 165, 32, 0.4); 
+  background-color: rgba(218, 165, 32, 0.03);
+  color: goldenrod; 
+  font-size: 20px;
+  margin-bottom: 20px; 
+}
+
+.tru-heading {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-family: sans-serif;
+}
+
+.tru-sub-heading {
+  color: #8a99ad;
+  font-size: 10px;
+  line-height: 1.6;
 }
