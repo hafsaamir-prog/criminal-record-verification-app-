@@ -6,6 +6,7 @@ import Services from './components/Services';
 import People from './components/People';
 import Process from './components/Process';
 import Trust from './components/Trust';
+import Faq from './components/Faq';
 export default function App() {
     return (
         <div className="app-wrapper">
@@ -15,6 +16,7 @@ export default function App() {
             <People/>
             <Process/>
             <Trust/>
+            <Faq/>
             
         </div>    
     );
