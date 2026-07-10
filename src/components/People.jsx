@@ -12,7 +12,7 @@ export default function People(){
             </div>
 
             <div className="images-peop-container">   
-                <div className="image-people-item">
+                <div className="image-peop-item">
                     <div className="image-container">
                         <img src ={employers} alt ="Employers" className="people-image"/>
                     </div>
@@ -24,7 +24,7 @@ export default function People(){
                     </div>
                 </div>
 
-            <div className="image-people-item">
+            <div className="image-peop-item">
                 <div className="image-container">
                     <img src ={immigration} alt ="Immigration" className ="people-image"/>
                 </div>
