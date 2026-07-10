@@ -7,7 +7,7 @@ export default function Process(){
             <h1 className="pro-main-heading">FOUR SIMPLE STEPS</h1>
             <p className ="pro-sub-heading">From application to delivery straightforward at every stage.</p>
             </div>
-        <div>
+        <div className ="steps-container">
     
         <div className ="step-row">
             <div className ="step-num">1</div>

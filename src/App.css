@@ -25,7 +25,7 @@
 }
 
 .logo-section{
-  display:flex;
+   flex-wrap: wrap;
   align-items:center;
   gap:10px;
 }
@@ -125,6 +125,7 @@
   }
   .nav-links.active {
     display:flex;
+    background-color: rgba(24, 23, 23, 0.664);
     
   }
 
@@ -265,6 +266,11 @@
     font-size:32px;
   }
 }
+@media(max-width:320px){
+  .stats-grid{
+    grid-template-columns:repeat(1,1fr);
+  }
+}
 .serv-container , .pro-container , .tru-container , .faq-container{
   background-color: #0b0f19; 
   color: white;
@@ -327,6 +333,7 @@
   flex-direction: row;
   justify-content: center;
   gap:30px;
+  padding : 30px;
 }
 .serv-card-left, .serv-card-right {
   background-color: #1a233a; 
@@ -432,27 +439,38 @@
   font-size: 12px;
   margin: 5px 0 25px 0;
 }
+.images-peop-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image-peop-item{
+   display:flex;
+  flex-direction: row;
+  align-items:center;
+  gap: 20px;
+}
 .image-container{
-  display:flex;
   justify-content:center;
   padding: 0 20px;
-  flex-direction: column;
 }
 .people-image {    
-    width: 500px;
+    width: 300px;
+    height:200px;
     margin: 0 auto;
 }
 .people-container {
   font-family: 'Arial', sans-serif;
   padding: 10px 10px;
-  display: flex;
-  flex-direction: column;
   gap:20px;
-  width: 500px;
+  width: 100%;
+  max-width:300px;
   margin: 0 auto;
   border-bottom: solid goldenrod;
   border-top: solid goldenrod;
 }
+
 .people-title{
   color:white;
   font-size:20px;
@@ -463,29 +481,38 @@
 
 }
 @media(max-width:600px){
-  .people-container{
-    width:100%;
-    max-width:500px ;
+  .image-container{
+    padding:0;
   }
   .people-image{
     width:100%;
+    max-width:300px;
     height:auto;
-    max-width:500px;
+
   }
-  .text-container{
-    width:100%;
-    max-width:500px;
+ .image-peop-item{
+  flex-direction: column;
+  text-align: center;}
+}
+.steps-container{
+  display:grid;
+  grid-template-columns:repeat(2,2fr) ;
   }
+  @media(max-width:600px){
+.steps-container{
+  grid-template-columns: 1fr;
+}
 }
 .step-row {
   display: flex;
-  align-items: flex-start;
+  align-items:flex-start;
   gap: 20px;
   padding: 25px;
 }
 
 .step-num {
-  width: 50px;
+  max-width: 50px;
+  width:100%;
   height: 50px;
   border: 2px solid #d4af37;
   border-radius: 50%;
@@ -504,13 +531,13 @@
 
 .step-heading , .tru-heading{
   color: white;
-  font-size: 28px;
+  font-size: 20px;
   margin: 0;
 }
 
 .step-sub-heading , .tru-sub-heading{
   color: #8a94a6;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
   margin: 0;
 }
@@ -525,11 +552,16 @@
   background-color: #0d1527;
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 8px;
-  padding: 20px 20px;
+  padding: 8px 8px;
   display: flex;
   flex-direction: column;
   align-items: center; 
   text-align: center;
+}
+@media(max-width:600px){
+  .tru-grid-container{
+    grid-template-columns: 1fr;
+  }
 }
 
 .tru-logo {
@@ -545,21 +577,10 @@
   font-size: 20px;
   margin-bottom: 20px; 
 }
-
-.tru-heading {
-  color: #ffffff;
-  font-size: 18px;
-  margin-bottom: 12px;
-  font-family: sans-serif;
-}
-
-.tru-sub-heading {
-  color: #8a99ad;
-  font-size: 10px;
-  line-height: 1.6;
-}
 .faq-list{
   margin-top:10px;
+  width:100%;
+  max-width:800px;
 }
 .faq-item{
   border-bottom: 1px solid #8a94a6; 
@@ -570,7 +591,7 @@
   justify-content:space-between;
   align-items:center;
   cursor:pointer;
-  gap:100px;
+  gap:40px;
 }
 .faq-question h3 {
   font-size:18px;
@@ -584,10 +605,8 @@
   font-weight:bold;
 }
 .faq-answer{
-  color:#6b778c;
-  margin-top:18px;
+  color:#b0b7c4;
+  margin-top:16px;
   line-height:1.8;
-  font-size:15px;
-  display:flex;
-  flex-direction: column;
+  font-size:14px;
 }

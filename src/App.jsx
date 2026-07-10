@@ -9,7 +9,7 @@ import Trust from './components/Trust';
 import Faq from './components/Faq';
 export default function App() {
     return (
-        <div className="app-wrapper">
+        <>
             <Hero />
             <Stats/>
             <Services/>
@@ -17,7 +17,6 @@ export default function App() {
             <Process/>
             <Trust/>
             <Faq/>
-            
-        </div>    
+        </>
     );
 }

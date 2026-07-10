@@ -27,13 +27,15 @@ export default function Faq(){
         answer:"yes you can"
     },
     {question:"Pricing - Express Verification",
-        answer:"Oceania(NZ,AU...) → 15 NZD PER COUNTRY, Asia → 36 NZD PER COUNTRY, Europe, Americas, Africa, Middle East → 46 NZD PER COUNTRY "
+        answer:(<>Oceania(NZ,AU...) → 15 NZD PER COUNTRY
+        <br/> Asia → 36 NZD PER COUNTRY
+        <br/> Europe, Americas, Africa, Middle East → 46 NZD PER COUNTRY </>)
     },
     {question:"Countries temporaily unavailable",
         answer:"Texas, Japan, Scotland are temporarily unavailable;"
     },
     {question:"Full list of available countries 179 out of 195",
-        answer:"Below is the full list of available countires America, albannia.." 
+        answer:"Here are all the Available Countires: Albania, Algeria, Andorra, Angola, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia, Bosnia & Herzegovina, Botswana, Brazil, Brunei, Bulgaria, Burundi, Cambodia, Cameroon, Canada, Chile, China, Colombia, Costa Rica, Croatia, Cuba, Cyprus, Czech Republic, Denmark, Ecuador, Egypt, Ethiopia, Fiji, Finland, France, Georgia, Germany, Ghana, Greece, Guatemala, Hungary, Iceland, India, Indonesia, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kuwait, Latvia, Lithuania, Luxembourg, Malaysia, Mexico, Moldova, Mongolia, Montenegro, Morocco, Netherlands, New Zealand, Nigeria, Norway, Oman, Panama, Peru, Philippines, Poland, Portugal, Qatar, Romania, Russia, Saudi Arabia, Senegal, Serbia, Singapore, Slovakia, South Africa, South Korea, Spain, Sri Lanka, Sweden, Switzerland, Taiwan, Tanzania, Thailand, Turkey, Uganda, Ukraine, UAE, United Kingdom, USA, Uruguay, Uzbekistan, Venezuela" ,
      }
 ];
     return(
@@ -57,6 +59,7 @@ export default function Faq(){
                     )}
                     </div>
             ))}
-            </div></div>
+            </div>
+            </div>
     );    
 }
