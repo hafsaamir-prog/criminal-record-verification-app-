@@ -1,7 +1,29 @@
 import React from "react";
 import "./PersonalInfo.css";
 
-export default function PersonalInfo(){
+export default function PersonalInfo({
+    formData,
+    setFormData,
+    nextStep}){
+        function handleChange(e){
+            const{name,value}=e.target;
+
+            setFormData({
+                ...formData,
+                [name]:value
+            });
+        }
+        function handleSendCode(field){
+            if (formData[field]===""){
+                alert(`Please enter your ${field} first .`);
+                return;
+            }
+            alert (`Verification code sent to ${formData[field]}`);
+        }
+        function handleSubmit(e){
+            e.preventDefault();
+            nextStep();
+        }
     return(
         <form className="personal-info-form" onSubmit ={handleSubmit}>
             <h2 className ="form-title">Personal Information </h2>
@@ -109,4 +131,3 @@ export default function PersonalInfo(){
 
     );
 }
-s
