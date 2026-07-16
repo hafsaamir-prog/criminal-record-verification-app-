@@ -8,8 +8,8 @@ export default function ResidenceHistory({
     prevStep}){
     }
     function handleCountryChange(index,e){
-        const{name,value=e.target;
-            const updatedCountries=[..formData.countries];
+        const{name,value}=e.target;
+            const updatedCountries=[...formData.countries];
             updatedCountries[index][name]=value;
 
             setFormData({
@@ -31,6 +31,13 @@ export default function ResidenceHistory({
                         nationalId:"",
                         otherDocuments:" "
                     }]
+                    function handleChange(e){
+                        handleChange(e){
+                            
+                        }
+
+                        }
+                    }
 
                     }
                     }
