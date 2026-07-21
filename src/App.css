@@ -464,7 +464,6 @@
 .image-peop-item{
   display:flex;
   flex-direction: column;
-  flex: 1 1 260px;
   max-width: 320px;
   align-items:center;
   gap: 20px;
