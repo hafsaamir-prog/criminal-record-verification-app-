@@ -1,12 +1,7 @@
 import React from "react";
 import "./ResidenceHistory.css";
 
-export default function ResidenceHistory({
-    formData,
-    setFormDta,
-    nextStep,
-    prevStep
-}){
+export default function ResidenceHistory({formData, setFormDta, nextStep, prevStep}){
     function handleCountryChange(index,e){
         const{name,value}=e.target;
 

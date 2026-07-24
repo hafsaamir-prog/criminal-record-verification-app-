@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import VerificationForm from "../VerificationForm";
 
 export default function Services() {
     const [isVerOpen, setIsVerOpen] = useState(false);
@@ -9,9 +10,10 @@ export default function Services() {
                 <span className="serv-gold-title">OUR SERVICES</span>
                 <h1 className="serv-main-heading">Choose Your Verification</h1>
                 <p className="serv-sub-heading">Two service levels to meet your specific requirements and timeline.</p>
-                <button className="start-veri-btn" onClick={() => setIsVerOpen(!isVerOpen)}>
+                <button className="start-veri-btn" onClick={() => setIsVerOpen(true)}>
                     Start Verification ➜
                 </button>
+                
             </div>
 
             <div className="cards-container">
@@ -123,6 +125,11 @@ export default function Services() {
                     <button className="card-action-btn">Start Now ➜</button>
                 </div>
             </div>
+            {isVerOpen && (
+                <VerificationForm
+                    onClose={() => setIsVerOpen(false)}
+                />
+)}
         </div>
     );
 }
